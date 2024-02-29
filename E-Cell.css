@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.fdd{
+    width: 100%;
+}
+#Hero{
+    height: 100vh;
+    background-image: url("E-HeroCover.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+
+}
+#logo{
+    height: 47px;
+    width: 87.5px;
+    background-image: url("Ecell-IIT.webp");
+    background-size: cover;
+}
+#header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    height: 70px;
+    background-color: #1c8dd6;
+    z-index: 3;
+}
+.heading {
+    display: inline-block;
+    font-size: 29px;
+}
+
+.heading:hover {
+    text-decoration: underline solid white;
+    font-size: 26px;
+}
+
+#vision{
+    background-color: rgb(99, 186, 245);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#eciitr{
+    font-size: 60px;
+    align-self: center;
+    margin-left: 40px;
+}
+#visionH{
+
+    background-color: #1c8dd6;
+    color: white;
+    height: 50vh;
+    width: 26%;
+    border-radius: 0% 30% 0 30%;
+    padding: 50px;
+}
+#biglogo{
+    height: 350px;
+    width: 250px;
+    background-image: url("biglogo.png");
+    background-size: cover;
+}
+#E-Gallery{
+    height: 100vh;
+    width: 100%;
+    background-image: url("E-gallary1.png");
+    background-size: cover;
+
+}
+#Gallery{
+    /* display: flex; */
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+}
+#culture{
+    font-size: 60px;
+    padding-top: 100px;
+}
+#E-culture{
+    margin-top: 50px;
+    font-size: 24px;
+} 
+.Contact{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 10px 10px;
+    display: inline-block;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right bottom,#1c8dd6,#004799);
+}
+.Contact:hover{
+    background: linear-gradient(to left top,#1c8dd6,#004799);
+}
+#footer{
+    background-color: #1c8dd6;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 3;
+}
+h1{
+    color: white;
+    display: inline-block;
+    margin: 10px 10px;
+    z-index: 1;
+}
+a i{
+    color: white;
+    margin: auto auto;
+}
+.teamC{
+    width: 24%;
+    height: 36vh;
+    background-color: white;
+    margin: 7vh 0;
+    padding: 10px;
+    border-radius: 10%;
+    color: #1c8dd6;
+}
+.teamC:hover{
+    background-color: #1c355f;
+    color: white;
+}
+img{
+    margin: 3% auto;
+    border: #1c8dd6 5px solid;
+    border-radius: 50%;
+    width: 50%;
+    height: 60%;
+}
+img:hover{
+    border: white 5px solid;
+}
+#Team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    background-color: #004799;
+
+}
+#Team h1{
+    margin: 60px 45%;
+    font-size: 60px;
+    z-index: 0;
+}
+.teamC p{
+    font-size: 3vh;
+}
+@media(max-width:950px){
+    #culture{
+        font-size: 37px;
+        padding-top: 50px;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    #E-culture{
+        font-size: 15px;
+        margin-top: 35px;
+    } 
+    /* .teamC p{
+        font-size: 16px;
+    } */
+    #Team h1{
+        margin: 40px 45%;
+        font-size: 40px;
+        z-index: 0;
+    }
+    #culture{
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .teamC{
+        width: 33%;
+        height: 36vh;
+        background-color: white;
+        margin: 7vh 0;
+        padding: 10px;
+        border-radius: 10%;
+        color: #1c8dd6;
+    }
+}
+@media(max-width:550px){
+    #Gallery{
+        width: 90%;
+        margin: 0px auto;
+    }
+    #Hero{
+        height: 60vh;
+    }
+    #culture{
+        font-size: 24px;
+        padding-top: 30px;
+    }
+    .heading{
+        font-size: 15px;
+    }
+    #E-culture{
+        font-size: 14px;
+        margin-top: 20px;
+    } 
+    /* .teamC p{
+        font-size: 12px;
+    } */
+    #Team h1{
+        margin: 30px 45%;
+        font-size: 30px;
+        z-index: 0;
+    }
+    #culture{
+        font-size: 30px;
+        padding-top: 70px;
+    }
+    .teamC{
+        width: 80%;
+        height: 30vh;
+        background-color: white;
+        margin: 7vh 0;
+        padding: 10px;
+        border-radius: 10%;
+        color: #1c8dd6;
+    }
+    #E-Gallery{
+        height: 50vh;
+    }
+    #vision{
+        background-color: rgb(99, 186, 245);
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    #eciitr{
+        font-size: 60px;
+        align-self: center;
+        margin-left: 40px;
+    }
+    #visionH{
+    
+        background-color: #1c8dd6;
+        color: white;
+        height: 90vh;
+        width: 100%;
+        border-radius: 0%;
+        padding: 50px;
+    }
+    #biglogo{
+        display: none;
+    }
+}
+@media(max-width:750px){
+
+    /* #vision{
+        background-color: rgb(99, 186, 245);
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    } */
+    /* #eciitr{
+        font-size: 60px;
+        align-self: center;
+        margin-left: 40px;
+    } */
+    #vision{
+        height: 60vh;
+    }
+    #visionH{
+    
+        background-color: #1c8dd6;
+        color: white;
+        height: 60vh;
+        width: 100%;
+        border-radius: 0%;
+        padding: 50px;
+    }
+    #biglogo{
+        display: none;
+    }
+    #visionH h2{
+        margin: 20px auto;
+
+    }
+    /* .teamC p{
+        font-size: 28px;
+    } */
+}
