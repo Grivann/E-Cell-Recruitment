@@ -32,10 +32,10 @@
       let count = 1; 
       for (let i = 0; i < 3; i++) {
         for (let j = 0; j < data[i].members.length; j++) {
-        //   console.log(data[i].members[j].name);
-        //   console.log(data[i].members[j].image);
-        //   console.log(data[i].members[j].position);
-        //   console.log("");
+          console.log(data[i].members[j].name);
+          console.log(data[i].members[j].image);
+          console.log(data[i].members[j].position);
+          console.log("");
           
           let teamData = document.querySelector(`#team${count}`);
           console.dir(teamData.children[0])
@@ -48,8 +48,7 @@
           }
           count++;
         }
-      }
-      
+      }   
       }
     )
     .catch(error => {
