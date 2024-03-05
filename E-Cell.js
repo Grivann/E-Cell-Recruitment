@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
     const headerItems = document.querySelectorAll("#header .heading");
     const logo = document.getElementById("logo");
 
@@ -24,8 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     logo.addEventListener("click", function() {
         smoothScroll("html");
-    });
-});
+    });;
 // async function fetchData() {
 //     try {
 //         const response = await fetch('https://api.ecelliitr.org/edc/team');
