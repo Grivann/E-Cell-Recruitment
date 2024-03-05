@@ -1,6 +1,6 @@
     const headerItems = document.querySelectorAll("#header .heading");
     const logo = document.getElementById("logo");
-
+ 
     function smoothScroll(target) {
         document.querySelector(target).scrollIntoView({
             behavior: "smooth"
@@ -24,15 +24,37 @@
     logo.addEventListener("click", function() {
         smoothScroll("html");
     });;
-// async function fetchData() {
-//     try {
-//         const response = await fetch('https://api.ecelliitr.org/edc/team');
-//         const data = await response.json();
-//         return data;
-//     } catch (error) {
-//         console.error('Error fetching data:', error);
-//     }
-// }
+
+    fetch('https://api.ecelliitr.org/edc/team')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      let count = 1; 
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < data[i].members.length; j++) {
+        //   console.log(data[i].members[j].name);
+        //   console.log(data[i].members[j].image);
+        //   console.log(data[i].members[j].position);
+        //   console.log("");
+          
+          let teamData = document.querySelector(`#team${count}`);
+          console.dir(teamData.children[0])
+          teamData.children[0].src=data[i].members[j].image;
+          teamData.children[1].innerText=data[i].members[j].name;
+          teamData.children[2].innerText=data[i].members[j].position;
+          console.log(teamData.children[2].innerText.length)
+          if(teamData.children[2].innerText.length>20){
+            teamData.children[2].style.fontSize="2.5vh";
+          }
+          count++;
+        }
+      }
+      
+      }
+    )
+    .catch(error => {
+      console.error('Error fetching data:', error);
+    });
 
 // async function populateHTML() {
 //     const data = await fetchData();
